@@ -1,6 +1,6 @@
 # healthgo
-[![GitHub version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/gojuukaze/ScreenOffTime/releases/tag/v1.0.0) 
-[![License: GPL v3](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/gojuukaze/ScreenOffTime/blob/master/LICENSE)
+[![GitHub version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/gojuukaze/healthgo/releases/tag/v1.0.0) 
+[![License: GPL v3](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/gojuukaze/healthgo/blob/master/LICENSE)
 [![Android version](https://img.shields.io/badge/android-7.0%2B-blue.svg)]()
   
 <img width = "100" height = "100" src="https://github.com/gojuukaze/healthgo/blob/master/pic/ic_launcher.png?raw=true">
@@ -14,6 +14,10 @@ a android pedometer app (安卓计步器)
 
 # Support
 Android 4.1- 7.0
+
+# Download
+[![Download](https://github.com/gojuukaze/ScreenOffTime/blob/master/pic/3.png?raw=true)](https://github.com/gojuukaze/healthgo/releases) 
+
 
 # Thanks
 
