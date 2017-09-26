@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#99000000"
+    android:id="@+id/setting_linear">
+    <Switch
+        style="@style/settingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开关"
+        android:id="@+id/on_off"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"/>
+
+    <Switch
+        style="@style/settingText"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="防杀模式"
+        android:id="@+id/foreground_model"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"/>
+    <TextView
+        android:id="@+id/about"
+        style="@style/settingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关于"/>
+</LinearLayout>

@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "cn.ikaze.healthgo"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0.0"
+    }
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
+        }
+
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+
+            // 移除无用的resource文件
+            shrinkResources true
+            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            //签名
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+
+}
