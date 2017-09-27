@@ -21,8 +21,8 @@ Android 4.1- 7.0
 
 # Thanks
 | Project/Peopke        | desc           | other  |
-| ------------- |:-------------|: -----|
-| [Realm](https://realm.io)      | a mobile database | 使用了这个数据库 |
+| ------------- | :------------- | : ----- |
+| [Realm](https://realm.io)| a mobile database | 使用了这个数据库 |
 | [EventBus](https://github.com/greenrobot/EventBus) | a publish/subscribe event bus optimized for Android  |  使用它进行跨线程通讯 |
 | [Hellocharts](https://github.com/lecho/hellocharts-android) |charts/graphs library for Android       | 使用了它的折线图 |
 |[simple-pedometer](https://github.com/google/simple-pedometer)|google simple pedometer|借鉴了它StepListener的设计|
