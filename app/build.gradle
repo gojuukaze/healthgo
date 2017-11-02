@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'realm-android'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '25.0.0'
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "cn.ikaze.healthgo"
         minSdkVersion 16
-        targetSdkVersion 24
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0.0"
     }
@@ -39,9 +39,13 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support:design:24.2.1'
+
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
 

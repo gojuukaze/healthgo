@@ -49,7 +49,8 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         serviceRun=false;
-        RealmConfiguration realmConfig = new RealmConfiguration.Builder(this)
+        Realm.init(this);
+        RealmConfiguration realmConfig = new RealmConfiguration.Builder()
                 .name("step_db")
                 .build();
         Log.d("app","app create()");
